@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <title> Nacionalni parkovi </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        <style>
+            h2, h3, h4, h5, h6 {
+                padding: 0.5%;
+            }
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap:35%;
+            }
+            nav button {
+                padding: 1%;
+                font-size: 1.5vw;
+                background-color: #2d2412;
+                color: #8cde00;
+                border: 2px solid #8cde00;
+                border-radius: 10px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+            }
+            #container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            #info a{
+                padding: 1%;
+                color: inherit;
+                text-decoration: none;
+                background-color: transparent;
+                margin: 0;
+                display: flex;
+                align-items: center;
+            }
+            #info a:hover h3 {
+                color: #8cde00;
+                background-color: #2d2412;
+                border-radius: 10px;
+                padding: 0.5%;
+                width: fit-content;
+            }
+            #opis {
+                background-color: rgb(98, 143, 63);
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                border: dashed #8cde00 5px;
+            }
+            
+            body {
+                font-family: 'Courier Prime', monospace;
+                background-color: #f0f0f0;
+                margin: 0;
+                padding: 50px;
+                background-color: rgb(151, 193, 169);
+                background-image: url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JlZW58ZW58MHx8MHx8fDA%3D');
+                background-repeat:no-repeat;
+                background-size: cover;
+            }
+            h1 {
+                color: #2d2412;
+                font-size: 2.5vw;
+                background-color: rgba(170, 255, 185, 0.609);
+                border-radius: 10px;
+                padding: 1%;
+            }
+            
+            footer {
+                font-size: 0.8em;
+                color: #ffffff;
+                margin-top: 5%;
+                text-align: center;
+            }
+            #opisimg {
+                display: block;
+                padding: 2%;
+                width: 100%;
+            }
+            #info {
+                margin : 2%;
+            }
+                .material-symbols-outlined {
+                    font-variation-settings:
+                    'FILL' 0,
+                    'wght' 400,
+                    'GRAD' 0,
+                    'opsz' 24
+                }
+
+        </style>
+    </head>
+<body>
+    <nav>
+    <button onclick="history.back()">
+        <span class="material-symbols-outlined">arrow_back_2</span>Natrag
+    </button>
+    <h1>Brijuni</h1>
+    </nav>
+<div id="opis">
+    <div id="info">
+        <a href="https://maps.app.goo.gl/FCnhczwRcjKnjku79" target="_blank"><h3>Lokacija<span class="material-symbols-outlined">touch_app</span></h3></a>
+        <p>Nalaze se koji kilometar zapadno od istarske obale, nasuprot Fažane, te se sastoje od 14 otoka i otočića ukupne površine 33,9 km kvadratna (površina otoka i akvatorija; na brijunski akvatorij otpada 80 % ukupne površine).</p>
+    </div>
+    
+   <a id="opisimg" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Brijuni_%28hr%29.svg/960px-Brijuni_%28hr%29.svg.png"><img id="opisimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Brijuni_%28hr%29.svg/960px-Brijuni_%28hr%29.svg.png"></a>     
+</div><br>
+<div id="opis">
+    <div id="info">
+        <h3>Otoci</h3>
+        <p>Dva najveća otoka su Veliki Brijun 7 km2 i Mali Brijun 1,7 km2, a manji su Sveti Marko, Gaz, Obljak, Supin, Supinić, Galija, Grunj, Vanga, Pusti/Madona, Vrsar, Kozada i Sveti Jerolim.</p>
+    </div></div>
+<footer>
+        <p>&copy; 2026 Nacionalni parkovi Hrvatske - Mihael Barbarić - 1.f - Sva prava pridržana</p>
+    </footer>
+</body>
+</html>  

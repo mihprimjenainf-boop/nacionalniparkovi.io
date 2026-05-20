@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <title> Nacionalni parkovi </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=touch_app" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=DynaPuff:wght@400..700&family=Leckerli+One&display=swap" rel="stylesheet">
+        <style>
+            #container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            body {
+                font-family: 'Courier Prime', monospace;
+                background-color: #f0f0f0;
+                margin: 0;
+                padding: 20px;
+                background-color: rgb(151, 193, 169);
+                background-image: url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JlZW58ZW58MHx8MHx8fDA%3D');
+                background-repeat:no-repeat;
+                background-size: cover;
+            }
+            h1 {
+                width: fit-content;
+                color: #2d2412;
+                font-size: 2.5vw;
+                background-color: rgb(170, 255, 185, 0.609);
+                border-radius: 10px;
+                padding: 1%;
+            }
+            h2{
+                background-color: rgba(170, 255, 186, 0.609);
+                font-size: 2vw;
+                color: #2d2412;
+                border-radius: 10px;
+                padding: 1%;
+            }
+            #kartahr {
+                border-radius: 15px;
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+                width: 75%;
+                border: 5px dashed #2d2412;
+            }
+            
+          .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+            }
+            footer {
+                margin-top: 20px;
+                font-size: 0.8em;
+                color: #ffffff;
+            }
+        </style>
+    </head>
+<body>
+    <div id="container">
+    <h1>Nacionalni parkovi Hrvatske </h1><br>
+    <table>
+        ada
+    </table>
+    <h2>Klikni i otvori detalje o parku <span class="material-symbols-outlined">touch_app</span></h2>
+    <img src="kartahr (2).png" usemap="#KartaHrvatske" alt="Karta Hrvatske"  id="kartahr">
+    <footer>
+        <p>&copy; 2026 Nacionalni parkovi Hrvatske - Mihael Barbarić - 1.f - Sva prava pridržana</p>
+    </footer>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+    window.onload = function () {
+        imageMapResize();
+    };
+</script>
+    <map name="KartaHrvatske">
+        <area  alt="" title="Brijuni" href="brijuni.htm" coords="367,1367,107" shape="circle">
+        <area  alt="" title="Risnjak" href="risnjak.htm" coords="922,986,98" shape="circle">
+        <area  alt="" title="Plitvička jezera" href="plitvice.htm" coords="1423,1383,103" shape="circle">
+        <area  alt="" title="Paklenica" href="paklenica.htm" coords="1313,1791,87" shape="circle">
+        <area  alt="" title="Sjeverni Velebit" href="svelebit.htm" coords="1076,1474,100" shape="circle">
+        <area  alt="" title="Korčula" href="korcula.htm" coords="1249,2223,97" shape="circle">
+        <area  alt="" title="Krka" href="krka.htm" coords="1624,2113,87" shape="circle">
+        <area alt="" title="Mljet" href="mljet.htm" coords="2396,3020,94" shape="circle">
+    </map> 
+</body>
+</html>
