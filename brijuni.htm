@@ -2,14 +2,15 @@
 <html> 
     <head>
         <meta charset="UTF-8">
-        <title> Nacionalni parkovi </title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <title> Nacionalni park Brijuni </title>
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.np-brijuni.hr/theme-assets/brijuni/favicon/favicon-32x32.png">        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
         <style>
             h2, h3, h4, h5, h6 {
                 padding: 0.5%;
+                font-size: 2vw;
             }
             nav {
                 display: flex;
@@ -28,12 +29,12 @@
                 display: flex;
                 align-items: center;
             }
-            #container {
+            .container {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
-            #info a{
+            .info a{
                 padding: 1%;
                 color: inherit;
                 text-decoration: none;
@@ -41,24 +42,42 @@
                 margin: 0;
                 display: flex;
                 align-items: center;
+                text-decoration: underline;
+                width:auto
             }
-            #info a:hover h3 {
+            .info p{
+                font-size: 1.5vw
+            }
+            .info li{
+                font-size: 1.5vw
+            }
+            
+            .info #lokacija:hover {
                 color: #8cde00;
                 background-color: #2d2412;
-                border-radius: 10px;
+                border-radius: 1vw;
                 padding: 0.5%;
                 width: fit-content;
+                text-decoration: underline;
             }
-            #opis {
+            .opis {
                 background-color: rgb(98, 143, 63);
                 display: flex;
                 flex-wrap: nowrap;
                 flex-direction: row;
                 align-items: center;
-                justify-content: space-evenly;
+                justify-content: space-between;
                 border: dashed #8cde00 5px;
             }
-            
+            .opis2 {
+                  background-color: rgb(98, 143, 63);
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: column;
+                align-items: auto;
+                justify-content: space-between;
+                border: dashed #8cde00 5px;
+            }
             body {
                 font-family: 'Courier Prime', monospace;
                 background-color: #f0f0f0;
@@ -83,22 +102,32 @@
                 margin-top: 5%;
                 text-align: center;
             }
-            #opisimg {
-                display: block;
-                padding: 2%;
-                width: 100%;
-            }
-            #info {
+            .info {
                 margin : 2%;
             }
                 .material-symbols-outlined {
+                    font-size:100%;
                     font-variation-settings:
                     'FILL' 0,
                     'wght' 400,
                     'GRAD' 0,
                     'opsz' 24
                 }
+            .slikeživotinje  {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 2%;
+            }
+            .slikeživotinje a {
+                width: 23%;
+            }
+            .slikeživotinje img{
+                width: 100%;
+                height: 100%;
+            }
 
+             
         </style>
     </head>
 <body>
@@ -108,20 +137,92 @@
     </button>
     <h1>Brijuni</h1>
     </nav>
-<div id="opis">
-    <div id="info">
-        <a href="https://maps.app.goo.gl/FCnhczwRcjKnjku79" target="_blank"><h3>Lokacija<span class="material-symbols-outlined">touch_app</span></h3></a>
+<!-- Lokacija -->
+<div class="opis">
+    <div class="info">
+        <a href="https://maps.app.goo.gl/FCnhczwRcjKnjku79" target="_blank"><h3 id="lokacija">Lokacija<span class="material-symbols-outlined">touch_app</span></h3></a>
         <p>Nalaze se koji kilometar zapadno od istarske obale, nasuprot Fažane, te se sastoje od 14 otoka i otočića ukupne površine 33,9 km kvadratna (površina otoka i akvatorija; na brijunski akvatorij otpada 80 % ukupne površine).</p>
     </div>
     
-   <a id="opisimg" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Brijuni_%28hr%29.svg/960px-Brijuni_%28hr%29.svg.png"><img id="opisimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Brijuni_%28hr%29.svg/960px-Brijuni_%28hr%29.svg.png"></a>     
+   <a style="padding: 2%; width: 50%; text-decoration: none;color: inherit; display: flex; flex-direction: column; align-items: center; gap: 1vw" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Brijuni_%28hr%29.svg/960px-Brijuni_%28hr%29.svg.png"><img style="width: 100%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Brijuni_%28hr%29.svg/960px-Brijuni_%28hr%29.svg.png"><span class="material-symbols-outlined" style="font-size: 2vw;">touch_app</span></a>     
 </div><br>
-<div id="opis">
-    <div id="info">
-        <h3>Otoci</h3>
-        <p>Dva najveća otoka su Veliki Brijun 7 km2 i Mali Brijun 1,7 km2, a manji su Sveti Marko, Gaz, Obljak, Supin, Supinić, Galija, Grunj, Vanga, Pusti/Madona, Vrsar, Kozada i Sveti Jerolim.</p>
-    </div></div>
-<footer>
+<!-- Otoci -->
+<div class="opis">
+    <div class="info">
+        <h3><u>Otoci</u></h3>
+        <p>Dva najveća otoka su Veliki Brijun 7 km<sup>2</sup> i Mali Brijun 1,7 km<sup>2</sup>, a manji su Sveti Marko, Gaz, Obljak, Supin, Supinić, Galija, Grunj, Vanga, Pusti/Madona, Vrsar, Kozada i Sveti Jerolim.</p>
+    </div></div><br>
+<!-- Proglašenje -->
+<div class="opis">
+    <div class="info">
+        <h3><u>Proglašenje</u></h3>
+        <p>Brijuni su proglašeni nacionalnim parkom 1983. godine zbog prirodne ljepote i bogate povijesti.</p>
+    </div></div><br>
+<!-- Priroda i životinje -->
+<div class="opis2">
+    <div class="info">
+        <h3><u>Priroda i životinje</u></h3>
+        <p>Brijuni su proglašeni Poznati su po mediteranskoj vegetaciji, safariju i raznim životinjama poput zebri, slonova, ljama i antilopa</p>
+   </div>
+   <div class="slikeživotinje">
+    <a href="https://ip.index.hr/remote/bucket.index.hr/b/index/975cb589-fa1d-4956-a157-6e4f8392fede.png?width=765&height=574"><img src="https://ip.index.hr/remote/bucket.index.hr/b/index/975cb589-fa1d-4956-a157-6e4f8392fede.png?width=765&height=574"></a>
+    <a href="https://croatia-istria.net/wp-content/uploads/2021/05/0003-img_3576.jpg"><img src="https://croatia-istria.net/wp-content/uploads/2021/05/0003-img_3576.jpg"></a>
+    <a href="https://www.np-brijuni.hr/imagecache/maxsize/6f67e492-4a50-4136-93fd-89f06287a549/19-01-2023/np_brijuni_38_1.jpg"><img src="https://www.np-brijuni.hr/imagecache/maxsize/6f67e492-4a50-4136-93fd-89f06287a549/19-01-2023/np_brijuni_38_1.jpg"></a>
+    <a href="https://www.np-brijuni.hr/imagecache/large/6f67e492-4a50-4136-93fd-89f06287a549/05-08-2021/natasa_sundara_lanka1_58.jpg"><img src="https://www.np-brijuni.hr/imagecache/large/6f67e492-4a50-4136-93fd-89f06287a549/05-08-2021/natasa_sundara_lanka1_58.jpg"></a>
+    </div>
+</div>
+<br>
+<!-- Povijest -->
+<div class="opis">
+    <div class="info">
+        <h3><u>Povijest</u></h3>
+        <p>Na Brijunima postoje tragovi života još iz prapovijesti, a važni su i rimski ostaci poput vila i mozaika.</p>
+    </div>
+    <a href="https://www.np-brijuni.hr/imagecache/maxsize/6f67e492-4a50-4136-93fd-89f06287a549/22-12-2023/slika3.png" style="width: 50%;"><img style="width: 100%" src="https://www.np-brijuni.hr/imagecache/maxsize/6f67e492-4a50-4136-93fd-89f06287a549/22-12-2023/slika3.png"></a>
+    <a href="https://www.np-brijuni.hr/imagecache/maxsize/6f67e492-4a50-4136-93fd-89f06287a549/29-12-2018/verige_vila.jpg" style="width: 50%;padding: 2%;"><img style="width: 100%;" src="https://www.np-brijuni.hr/imagecache/maxsize/6f67e492-4a50-4136-93fd-89f06287a549/29-12-2018/verige_vila.jpg"></a>
+</div>
+<br>
+<!-- Josip Broz Tito -->
+<div class="opis">
+    <div class="info">
+        <h3><u>Josip Broz Tito</u></h3>
+        <p>Brijuni su bili ljetna rezidencija Josip Broz Tito. Tamo su dolazili mnogi svjetski političari i poznate osobe.</p>
+    </div>
+    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm2b6f-V870irf4euFvCBN9bbUaiLyLs_ulpWCJrNCcOvs8Ag6mGDfg5L_sFAYBcFkn2IbygP0TUmZjYq-N9aIJJ22L4CbmRbm92dwSdI-&s=10" style="width: 50%;"><img style="width: 100%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm2b6f-V870irf4euFvCBN9bbUaiLyLs_ulpWCJrNCcOvs8Ag6mGDfg5L_sFAYBcFkn2IbygP0TUmZjYq-N9aIJJ22L4CbmRbm92dwSdI-&s=10"></a>
+</div><br>
+<!-- Turizam -->
+<div class="opis">
+    <div class="info">
+        <h3><u>Turizam</u></h3>
+        <p>Danas su popularno turističko odredište s vožnjom turističkim vlakićem, bicikliranjem i razgledavanjem prirode</p>
+    </div>
+    <a href="https://www.np-brijuni.hr/imagecache/maxsize/6f67e492-4a50-4136-93fd-89f06287a549/11-03-2019/safari_park_vlakic.jpg" style="width: 50%;padding:2%"><img style="width:100%" src="https://www.np-brijuni.hr/imagecache/maxsize/6f67e492-4a50-4136-93fd-89f06287a549/11-03-2019/safari_park_vlakic.jpg"></a>
+</div><br>
+<!-- Zanimljivosti -->
+<div class="opis">
+    <div class="info">
+        <h3><u>Zanimljivosti</u></h3>
+        <ul>
+            <li>Na Brijunima se nalazi jedan od najstarijih maslinika na Mediteranu.</li>
+            <li>Postoje otisci dinosaura stari milijunima godina..</li>
+            <li>Safari park je jedna od najvećih atrakcija.</li>
+        </ul>
+    </div>
+    <a href="https://www.np-brijuni.hr/imagecache/maxsize/6f67e492-4a50-4136-93fd-89f06287a549/31-08-2021/maslina_zvonimir_peric.jpg" style="width: 50%; padding:2% ;"><img style="width: 100%;height: auto;" src="https://www.np-brijuni.hr/imagecache/maxsize/6f67e492-4a50-4136-93fd-89f06287a549/31-08-2021/maslina_zvonimir_peric.jpg"></a>
+</div><br>
+
+
+
+
+    <footer>
+    <div class="opis" style="background-color: rgb(50, 67, 33); border: dashed lime; padding: 0;">
+    <div class="info">
+        <h3 style="text-align: left;"><u>Izvori</u></h3>
+        <a href="https://www.np-brijuni.hr/hr" target="_blank" style="width: 100%;">https://www.np-brijuni.hr/hr</a>
+         <br> Svi izvori bili su pristupljeni i dostupni od 28.4.2026 do 10.6.2026. 
+    </div>
+    <img style="height: 100%;padding: 2%;height: auto;" src="https://shop.np-brijuni.hr/theme-assets//img/logo_npbrijuni_footer.svg">
+</div><br>
         <p>&copy; 2026 Nacionalni parkovi Hrvatske - Mihael Barbarić - 1.f - Sva prava pridržana</p>
     </footer>
 </body>

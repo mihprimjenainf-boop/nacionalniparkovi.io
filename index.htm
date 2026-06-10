@@ -3,15 +3,67 @@
     <head>
         <meta charset="UTF-8">
         <title> Nacionalni parkovi </title>
+        <link rel="icon" type="image/png" href="https://www.parkovihrvatske.hr/assets/images/interface/social-logo.png" sizes="32x32">
+        <audio controls autoplay style="visibility: hidden;" >
+            <source src="https://www.image2url.com/r2/default/audio/1781129189931-34234d4e-1b84-4295-b58e-ba02761f829d.mp3" type="audio/mp3">
+        </audio>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=touch_app" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=DynaPuff:wght@400..700&family=Leckerli+One&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            #container {
+        .loader {
+        width: calc(6*30px);
+        height: 50px;
+        display: flex;
+        color: #8d7958;
+        filter: drop-shadow(30px 25px 0 currentColor) drop-shadow(60px 0 0 currentColor) drop-shadow(120px 0 0 currentColor);
+        clip-path: inset(0 100% 0 0);
+        animation: l12 2s 7 steps(7);
+        }
+        .loader:before {
+        content: "";
+        width: 30px;
+        height: 25px;
+        --c:no-repeat radial-gradient(farthest-side,currentColor 92%,#0000);
+        background: 
+            var(--c) left /70% 70%,
+            var(--c) right/20% 20%,
+            var(--c) top    0 right 15%/20% 20%,
+            var(--c) bottom 0 right 15%/20% 20%;
+        }
+        @keyframes l12 {
+        100% {clip-path: inset(0 -30px 0 0)}
+        }
+        #loader-wrapper {
+        position: fixed;
+        inset: 0;
+        background: #111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+
+        animation: fadeOut 0.5s forwards;
+        animation-delay: 4.2s; 
+        }
+
+        @keyframes fadeOut {
+        to {
+            opacity: 0;
+            visibility: hidden;
+        }
+        }
+
+        .content {
+        opacity: 1;
+        }
+            .container {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                justify-content: center;
             }
             body {
                 font-family: 'Courier Prime', monospace;
@@ -22,6 +74,7 @@
                 background-image: url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JlZW58ZW58MHx8MHx8fDA%3D');
                 background-repeat:no-repeat;
                 background-size: cover;
+                text-align: center;
             }
             h1 {
                 width: fit-content;
@@ -59,35 +112,146 @@
                 font-size: 0.8em;
                 color: #ffffff;
             }
+            .container p{
+                background-color: rgba(170, 255, 186, 0.609);
+                font-size: 1.2vw;
+                color: #000000;
+                border-radius: 10px;
+                padding: 1%;
+                width: 50%;
+            }
+            table{
+                border-collapse: collapse;
+                border-style: hidden;
+                background-color: rgba(170, 255, 186, 0.609);
+                width: 45%;
+                color: #000000;
+                font-size: 1.2vw;
+            }
+            table td, table th{
+                border: 1px solid #2d2412;
+                padding: 0.5%;
+            }
+            td img{
+                width: 25%;
+                height: auto;
+            }
+            hr{
+                height: 2px;width: 100%;
+                 background-color: rgb(110, 255, 110);
+                border: none;
+
+            }
         </style>
     </head>
 <body>
-    <div id="container">
+    <div id="loader-wrapper">
+  <div class="loader"></div>
+</div>
+    <div class="container">
     <h1>Nacionalni parkovi Hrvatske </h1><br>
+    <hr>
+    <h2>Sadržaj:</h2>
     <table>
-        ada
+        
+        <tr>
+        <th>Br.</th>
+        <th>Ime parka</th>
+        <th>Logotip</th>
+        <th>Godina proglašenja</th>
+        </tr>
+            <td>1.</td>
+            <td>NP Plitvička jezera</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5eW4vNHxWTRuoS_a1cMc0uOCqbJegOVrcaA&s" alt=""></td>
+            <td>1949.</td>
+        </tr>
+
+        <tr>
+        
+        <tr>
+            <td>2.</td>
+            <td>NP Paklenica</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7JR45n5vAoI9luf_rI-YTyGFEnOQ7jy_vGA&s" alt=""></td>
+            <td>1949.</td>
+        </tr>
+
+        <tr>
+            <td>3.</td>
+            <td>NP Risnjak</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCSTnvoe4_4Cm7-B1UlsRo3JR9ZlqlbIpkFA&s" alt=""></td>
+            <td>1953.</td>
+        </tr>
+
+        <tr>
+            <td>4.</td>
+            <td>NP Mljet</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqN18VW9sLfJZUrgfL0ctN4m9tOu7XgiUH_A&s" alt=""></td>
+            <td>1960.</td>
+        </tr>
+
+        <tr>
+            <td>5.</td>
+            <td>NP Kornati</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZbIKKHz0MKDuWZwbENg1-xiFaqcvXoui8Aw&s" alt=""></td>
+            <td>1980.</td>
+        </tr>
+
+        <tr>
+            <td>6.</td>
+            <td>NP Brijuni</td>
+            <td><img src="https://luxurykadena.com/wp-content/uploads/2017/12/brijuni-logo-crop-RESZIE.png" alt=""></td>
+            <td>1983.</td>
+        </tr>
+
+        <tr>
+            <td>7.</td>
+            <td>NP Krka</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-4Y2QsVEmHPWtthb7As2DXrOPggtXUDvxgA&s" alt=""></td>
+            <td>1985.</td>
+        </tr>
+
+        <tr>
+            <td>8.</td>
+            <td>NP Sjeverni Velebit</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-GehFA59-tWIPMhXVxkI4u_yJDsISlpUEoA&s" alt=""></td>
+            <td>1999.</td>
+        </tr>
+
+
     </table>
-    <h2>Klikni i otvori detalje o parku <span class="material-symbols-outlined">touch_app</span></h2>
-    <img src="kartahr (2).png" usemap="#KartaHrvatske" alt="Karta Hrvatske"  id="kartahr">
+   
+    <p><b>Nacionalni park</b> je zaštićeni prostor posebne ljepote i dobre prirodne očuvanosti u kojima obitavaju biljke i životinje, gdje su ljudski utjecaji ograničeni. Ističe se svojim jedinstvenim biljnim i životinjskim svijetom i prirodnim rijetkostima. U Hrvatskoj postoji 8 nacionalnih parkova.</p>
+    
+    <p><b>Nacionalni parkovi</b> su važni jer štite prirodu i omogućuju očuvanje biljaka, životinja i prirodnih staništa u njihovom izvornom obliku. Oni pomažu u očuvanju bioraznolikosti i sprječavaju uništavanje okoliša. Osim toga, važni su i za znanost, obrazovanje te održivi turizam koji ne narušava prirodu. Tako omogućuju da prirodne ljepote ostanu sačuvane i za buduće generacije.</p>
+    
+    <h2>Klikni i otvori detalje o parku <span class="material-symbols-outlined">touch_app</span></h2></div>
+    <img src="karta.webp" usemap="#KartaHrvatske" alt="Karta Hrvatske"  id="kartahr"> <br>
+    
+    <a href="kviz.htm" target="_blank" style="text-decoration: none;" title="Kviz o nacionalnim parkovima">
+        <img style="border-radius: 100%;width: 25%" src="https://cdn.vectorstock.com/i/500p/61/70/quiz-time-3d-green-design-vector-55366170.jpg" alt="Quiz">
+    </a><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/P7wrVoGawKI?si=RoCRFD6B4UTgf3m9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <footer>
         <p>&copy; 2026 Nacionalni parkovi Hrvatske - Mihael Barbarić - 1.f - Sva prava pridržana</p>
     </footer>
-</div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
 <script>
     window.onload = function () {
         imageMapResize();
     };
 </script>
-    <map name="KartaHrvatske">
+   
+<map name="KartaHrvatske">
         <area  alt="" title="Brijuni" href="brijuni.htm" coords="367,1367,107" shape="circle">
         <area  alt="" title="Risnjak" href="risnjak.htm" coords="922,986,98" shape="circle">
         <area  alt="" title="Plitvička jezera" href="plitvice.htm" coords="1423,1383,103" shape="circle">
         <area  alt="" title="Paklenica" href="paklenica.htm" coords="1313,1791,87" shape="circle">
         <area  alt="" title="Sjeverni Velebit" href="svelebit.htm" coords="1076,1474,100" shape="circle">
-        <area  alt="" title="Korčula" href="korcula.htm" coords="1249,2223,97" shape="circle">
+        <area  alt="" title="Kornat" href="kornati.htm" coords="1249,2223,97" shape="circle">
         <area  alt="" title="Krka" href="krka.htm" coords="1624,2113,87" shape="circle">
         <area alt="" title="Mljet" href="mljet.htm" coords="2396,3020,94" shape="circle">
     </map> 
+    
 </body>
 </html>

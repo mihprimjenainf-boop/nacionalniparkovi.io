@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <title> Nacionalni park Mljet </title>
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqN18VW9sLfJZUrgfL0ctN4m9tOu7XgiUH_A&s">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+<style>
+            h2, h3, h4, h5, h6 {
+                padding: 0.5%;
+                font-size: 2vw;
+            }
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap:35%;
+            }
+            nav button {
+                padding: 1%;
+                font-size: 1.5vw;
+                background-color: #2d2412;
+                color: #8cde00;
+                border: 2px solid #8cde00;
+                border-radius: 10px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .info a{
+                padding: 1%;
+                color: inherit;
+                text-decoration: none;
+                background-color: transparent;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                text-decoration: underline;
+                width:auto
+            }
+            .info p{
+                font-size: 1.5vw
+            }
+            .info li{
+                font-size: 1.5vw
+            }
+            
+            .info #lokacija:hover {
+                color: #8cde00;
+                background-color: #2d2412;
+                border-radius: 10px;
+                padding: 0.5%;
+                width: fit-content;
+                text-decoration: underline;
+            }
+            .opis {
+                background-color: rgb(98, 143, 63);
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                border: dashed #8cde00 5px;
+            }
+            body {
+                font-family: 'Courier Prime', monospace;
+                margin: 0;
+                padding: 50px;
+                background-image: url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?fm=jpg&q=60&w=3000&auto=format&fit=crop');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            h1 {
+                color: #2d2412;
+                font-size: 2.5vw;
+                background-color: rgba(170, 255, 185, 0.609);
+                border-radius: 10px;
+                padding: 1%;
+            }
+            
+            footer {
+                font-size: 0.8em;
+                color: #ffffff;
+                margin-top: 5%;
+                text-align: center;
+            }
+            .info {
+                margin : 2%;
+            }
+            .material-symbols-outlined {
+                font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+            }
+            .slikeživotinje {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 2%;
+                align-items: center;
+            }
+            .slikeživotinje img{
+                width: 100%;
+                height: auto;
+            }
+</style>
+</head>
+
+<body>
+    <nav>
+    <button onclick="history.back()">
+        <span class="material-symbols-outlined">arrow_back_2</span>Natrag
+    </button>
+    <h1>Mljet</h1>
+    </nav>
+
+<!-- Lokacija -->
+<div class="opis">
+    <div class="info">
+        <a href="https://maps.app.goo.gl/ZAUaYyscgsx5qUBm8" target="_blank">
+            <h3 id="lokacija">Lokacija<span class="material-symbols-outlined">touch_app</span></h3>
+        </a>
+        <p>Nacionalni park Mljet nalazi se na zapadnom dijelu otoka Mljeta u Dubrovačko-neretvanskoj županiji. Poznat je po dva slana jezera i gustim šumama.</p>
+    </div>
+
+    <a style="padding: 2%; width: 50%; text-decoration: none;color: inherit; display: flex; flex-direction: column; align-items: center; gap: 1vw"
+       href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_e8UAE0o6ct0W9EmyCqQxWjvqQtgckEARyA&s">
+        <img style="width: 100%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_e8UAE0o6ct0W9EmyCqQxWjvqQtgckEARyA&s">
+        <span class="material-symbols-outlined" style="font-size: 2vw;">touch_app</span>
+    </a>
+</div><br>
+
+<!-- Jezera -->
+<div class="opis">
+    <div class="info">
+        <h3><u>Jezera</u></h3>
+        <p>Park je poznat po Velikom i Malom jezeru koja su povezana s morem. U Velikom jezeru nalazi se otočić Sveta Marija s benediktinskim samostanom.</p>
+    </div>
+        <a href="https://jolie.hr/wp-content/uploads/2023/05/289499858_372579491640489_4246276300753608775_n-1.jpg" style="width: 50%; padding: 2%;"><img src="https://jolie.hr/wp-content/uploads/2023/05/289499858_372579491640489_4246276300753608775_n-1.jpg" style="width: 100%;"></a>
+
+</div><br>
+
+<!-- Proglašenje -->
+<div class="opis">
+    <div class="info">
+        <h3><u>Proglašenje</u></h3>
+        <p>Nacionalni park Mljet proglašen je 1960. godine, kao jedan od prvih morskih nacionalnih parkova u ovom dijelu Mediterana.</p>
+    </div>
+</div><br>
+
+<!-- Priroda i životinje -->
+<div class="opis">
+    <div class="info">
+        <h3><u>Priroda i životinje</u></h3>
+        <p>Otok je prekriven gustom mediteranskom šumom hrasta crnike i alepskog bora. Žive zečevi, mungosi, brojne ptice i morski organizmi.</p>
+   </div>
+
+   <div class="slikeživotinje">
+    <a href="https://zadarskilist.novilist.hr/wp-content/uploads/2023/03/mungos.jpg"><img src="https://zadarskilist.novilist.hr/wp-content/uploads/2023/03/mungos.jpg"></a>
+    </div>
+</div>
+<br>
+
+<!-- Povijest -->
+<div class="opis">
+    <div class="info">
+        <h3><u>Povijest</u></h3>
+        <p>Mljet je bio naseljen još u antičko doba. Benediktinski samostan na otočiću Sveta Marija datira iz 12. stoljeća.</p>
+    </div>
+</div>
+<br>
+
+<!-- Turizam -->
+<div class="opis">
+    <div class="info">
+        <h3><u>Turizam</u></h3>
+        <p>Nacionalni park Mljet popularan je za kupanje, vožnju kajakom, biciklizam i miran odmor u prirodi.</p>
+    </div>
+</div>
+<br>
+
+<!-- Zanimljivosti -->
+<div class="opis">
+    <div class="info">
+        <h3><u>Zanimljivosti</u></h3>
+        <ul>
+            <li>Mljet je jedan od najšumovitijih otoka na Mediteranu.</li>
+            <li>U Odisejevoj špilji, prema legendi, boravio je Odisej.</li>
+            <li>Veliko i Malo jezero imaju jedinstven morski ekosustav.</li>
+        </ul>
+    </div>
+</div>
+<br>
+
+<footer>
+<div class="opis" style="background-color: rgb(50, 67, 33); border: dashed lime; padding: 0;">
+    <div class="info">
+        <h3><u>Izvori</u></h3>
+        <a href="https://www.np-mljet.hr/" target="_blank">https://www.np-mljet.hr/</a>
+         <br> Svi izvori bili su pristupljeni i dostupni od 28.4.2026 do 10.6.2026. 
+    </div>
+    <img style="padding: 2%;width: 25%;" src="https://np-mljet.hr/wp-content/uploads/2020/03/logo_np_mljet.png">
+</div>
+
+<p>&copy; 2026 Nacionalni parkovi Hrvatske - Mihael Barbarić - 1.f - Sva prava pridržana</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <title> Nacionalni park Krka </title>
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-4Y2QsVEmHPWtthb7As2DXrOPggtXUDvxgA&s">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+<style>
+            h2, h3, h4, h5, h6 {
+                padding: 0.5%;
+                font-size: 2vw;
+            }
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap:35%;
+            }
+            nav button {
+                padding: 1%;
+                font-size: 1.5vw;
+                background-color: #2d2412;
+                color: #8cde00;
+                border: 2px solid #8cde00;
+                border-radius: 10px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .info a{
+                padding: 1%;
+                color: inherit;
+                text-decoration: none;
+                background-color: transparent;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                text-decoration: underline;
+                width:auto
+            }
+            .info p{
+                font-size: 1.5vw
+            }
+            .info li{
+                font-size: 1.5vw
+            }
+            
+            .info #lokacija:hover {
+                color: #8cde00;
+                background-color: #2d2412;
+                border-radius: 10px;
+                padding: 0.5%;
+                width: fit-content;
+                text-decoration: underline;
+            }
+            .opis {
+                background-color: rgb(98, 143, 63);
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                border: dashed #8cde00 5px;
+            }
+            .opis2 {
+                background-color: rgb(98, 143, 63);
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                border: dashed #8cde00 5px;
+            }
+            body {
+                font-family: 'Courier Prime', monospace;
+                background-color: #f0f0f0;
+                margin: 0;
+                padding: 50px;
+                background-color: rgb(151, 193, 169);
+                background-image: url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?fm=jpg&q=60&w=3000&auto=format&fit=crop');
+                background-repeat:no-repeat;
+                background-size: cover;
+            }
+            h1 {
+                color: #2d2412;
+                font-size: 2.5vw;
+                background-color: rgba(170, 255, 185, 0.609);
+                border-radius: 10px;
+                padding: 1%;
+            }
+            
+            footer {
+                font-size: 0.8em;
+                color: #ffffff;
+                margin-top: 5%;
+                text-align: center;
+            }
+            .info {
+                margin : 2%;
+            }
+            .material-symbols-outlined {
+                font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+            }
+            .slikeživotinje {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 2%;
+                align-items: center;
+            }
+             .slika {
+                padding: 2%;
+                width: 25%;
+             }
+             .slikeživotinje a {
+                width: 23%;
+                height: fit-content;
+            }
+            .slikeživotinje img{
+                width: 100%;
+                height: auto;
+            }
+        </style>
+</head>
+
+<body>
+    <nav>
+    <button onclick="history.back()">
+        <span class="material-symbols-outlined">arrow_back_2</span>Natrag
+    </button>
+    <h1>Krka</h1>
+    </nav>
+
+<!-- Lokacija -->
+<div class="opis">
+    <div class="info">
+        <a href="https://maps.app.goo.gl/28KfTKs3giMWokZS6" target="_blank">
+            <h3 id="lokacija">Lokacija<span class="material-symbols-outlined">touch_app</span></h3>
+        </a>
+        <p>Nacionalni park Krka nalazi se u Šibensko-kninskoj županiji, uz rijeku Krku. Obuhvaća područje toka rijeke od Knina do Skradina te donji tok rijeke Čikole.</p>
+    </div>
+
+    <a style="padding: 2%; width: 50%; text-decoration: none;color: inherit; display: flex; flex-direction: column; align-items: center; gap: 1vw"
+       href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPqbbnHzTYwOqnsNzKQ5zyX7CLjhhnI6XY7A&s">
+        <img style="width: 100%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPqbbnHzTYwOqnsNzKQ5zyX7CLjhhnI6XY7A&s">
+        <span class="material-symbols-outlined" style="font-size: 2vw;">touch_app</span>
+    </a>
+</div><br>
+
+<!-- Sedreni slapovi -->
+<div class="opis">
+    <div class="info">
+        <h3><u>Sedreni slapovi</u></h3>
+        <p>Nacionalni park Krka poznat je po sedrenim slapovima koji nastaju taloženjem vapnenca. Najpoznatiji su Skradinski buk, Roški slap i Manojlovac.</p>
+    </div>
+     <a href="https://npkrka.hr/wp-content/uploads/Skradinski-buk-3-scaled.jpg" style="width: 100%;padding: 2%;">
+        <img src="https://npkrka.hr/wp-content/uploads/Skradinski-buk-3-scaled.jpg" style="width: 100%;">
+    </a>
+</div><br>
+
+<!-- Proglašenje -->
+<div class="opis">
+    <div class="info">
+        <h3><u>Proglašenje</u></h3>
+        <p>Nacionalni park Krka proglašen je 1985. godine radi zaštite rijeke Krke, slapova, biljnog i životinjskog svijeta te kulturne baštine.</p>
+    </div>
+</div><br>
+
+<!-- Priroda i životinje -->
+<div class="opis">
+    <div class="info">
+        <h3><u>Priroda i životinje</u></h3>
+        <p>Na području parka zabilježeno je više od 860 biljnih vrsta te brojne životinje poput vidri, čaplji, kormorana i pastrva.</p>
+   </div>
+
+   <div class="slikeživotinje">
+    <a href="https://nepoznata-krka.eu/wp-content/uploads/2021/05/p1310352153642.jpg" style="width: 100%;">
+        <img src="https://nepoznata-krka.eu/wp-content/uploads/2021/05/p1310352153642.jpg">
+    </a>
+    </div>
+</div>
+<br>
+
+<!-- Povijest -->
+<div class="opis">
+    <div class="info">
+        <h3><u>Povijest</u></h3>
+        <p>Područje Krke naseljeno je od prapovijesti. Posebno je poznat otočić Visovac s franjevačkim samostanom iz 15. stoljeća.</p>
+    </div>
+</div>
+<br>
+
+<!-- Turizam -->
+<div class="opis">
+    <div class="info">
+        <h3><u>Turizam</u></h3>
+        <p>Krka je jedno od najposjećenijih prirodnih područja u Hrvatskoj s poučnim stazama, slapovima i kulturnim znamenitostima.</p>
+    </div>
+</div>
+<br>
+
+<!-- Zanimljivosti -->
+<div class="opis">
+    <div class="info">
+        <h3><u>Zanimljivosti</u></h3>
+        <ul>
+            <li>Skradinski buk je jedan od najpoznatijih slapova u Europi.</li>
+            <li>Na rijeci Krki nalazi se jedna od prvih hidroelektrana na svijetu.</li>
+            <li>Na Visovcu se nalazi franjevački samostan iz 15. stoljeća.</li>
+        </ul>
+    </div>
+</div>
+<br>
+
+<footer>
+<div class="opis" style="background-color: rgb(50, 67, 33); border: dashed lime; padding: 0;">
+    <div class="info">
+        <h3><u>Izvori</u></h3>
+        <a href="https://www.np-krka.hr/" target="_blank">https://www.np-krka.hr/</a>
+         <br> Svi izvori bili su pristupljeni i dostupni od 28.4.2026 do 10.6.2026. 
+    </div>
+    <img style="padding: 2%;width: 25%;" src="https://npkrka.hr/wp-content/themes/np-krka/assets/img/np-krka-logotip-white.png">
+</div>
+
+<p>&copy; 2026 Nacionalni parkovi Hrvatske - Mihael Barbarić - 1.f - Sva prava pridržana<br> Svi izvori bili su pristupljeni i dostupni od 28.4.2026 do 10.6.2026. </p>
+</footer>
+</body>
+</html>

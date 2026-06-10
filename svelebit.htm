@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <title> Nacionalni park Sjeverni Velebit </title>
+<link rel="icon" type="image/png" sizes="32x32" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFQ3_4tUGeITzMrD1LKZfX6LIFUFwgeXXsKg&s">   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        <style>
+            h2, h3, h4, h5, h6 {
+                padding: 0.5%;
+                font-size: 2vw;
+            }
+            header {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap:30%;
+            }
+            header button {
+                padding: 1%;
+                font-size: 1.5vw;
+                background-color: #2d2412;
+                color: #8cde00;
+                border: 2px solid #8cde00;
+                border-radius: 10px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .info a{
+                padding: 1%;
+                color: inherit;
+                text-decoration: none;
+                background-color: transparent;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                text-decoration: underline;
+                width:auto
+            }
+            .info p{
+                font-size: 1.5vw
+            }
+            .info li{
+                font-size: 1.5vw
+            }
+            
+            .info #lokacija:hover {
+                color: #8cde00;
+                background-color: #2d2412;
+                border-radius: 10px;
+                padding: 0.5%;
+                width: fit-content;
+                text-decoration: underline;
+            }
+            .opis {
+                background-color: rgb(98, 143, 63);
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                border: dashed #8cde00 5px;
+            }
+            .opis2 {
+                  background-color: rgb(98, 143, 63);
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                border: dashed #8cde00 5px;
+            }
+            body {
+                font-family: 'Courier Prime', monospace;
+                background-color: #f0f0f0;
+                margin: 0;
+                padding: 50px;
+                background-color: rgb(151, 193, 169);
+                background-image: url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JlZW58ZW58MHx8MHx8fDA%3D');
+                background-repeat:no-repeat;
+                background-size: cover;
+            }
+            h1 {
+                color: #2d2412;
+                font-size: 2.5vw;
+                background-color: rgba(170, 255, 185, 0.609);
+                border-radius: 10px;
+                padding: 1%;
+            }
+            
+            footer {
+                font-size: 0.8em;
+                color: #ffffff;
+                margin-top: 5%;
+                text-align: center;
+            }
+            .info {
+                margin : 2%;
+            }
+                .material-symbols-outlined {
+                    font-variation-settings:
+                    'FILL' 0,
+                    'wght' 400,
+                    'GRAD' 0,
+                    'opsz' 24
+                }
+            .slikeživotinje {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 2%;
+                align-items: center;
+            }
+             .slika {
+                padding: 2%;
+                width: 25%;
+             }
+             .slikeživotinje a {
+                width: 23%;
+                height: fit-content;
+            }
+            .slikeživotinje img{
+                width: 100%;
+                height: auto;
+            }
+        </style>
+    </head>
+<body>
+    <header>
+    <button onclick="history.back()">
+        <span class="material-symbols-outlined">arrow_back_2</span>Natrag
+    </button>
+    <h1>Sjeverni Velebit</h1>
+    </header>
+<!-- Lokacija -->
+<div class="opis">
+    <div class="info">
+        <a href="https://maps.app.goo.gl/jnZ8BcygkkuRyi8c9" target="_blank">
+        <h3 id="lokacija">Lokacija<span class="material-symbols-outlined">touch_app</span></h3></a>
+        <p>
+Nacionalni park Sjeverni Velebit nalazi se u Ličko-senjskoj županiji, na sjevernom dijelu planine Velebit. Smješten je u planinskom području koje je poznato po svojoj očuvanoj prirodi i bogatoj bioraznolikosti.</p>
+    </div>
+    <a href="https://lika-active.com/uploads/files/Mapa-velebit3.jpg" style="width: 70%; padding: 2%;"><img style="width: 100%;" src="https://lika-active.com/uploads/files/Mapa-velebit3.jpg" alt=""></a>
+      
+</div><br>
+<!-- Reljef -->
+<div class="opis">
+    <div class="info">
+        <h3><u>Reljef</u></h3>
+        <p>Reljef Nacionalnog parka je izrazito razveden pa se na cjelokupnom području mogu izdvojiti tri specifične geomorfološke cjeline.
+Najviši zapadni i sjeverozapadni dio obuhvaćaju vrhovi masiva Risnjaka i Snježnika, središnji i jugoistočni dio obuhvaća krška zaravan, a sjeverni dolina rijeke Kupe s bujičnim vodotocima Krašićevica i Sušica.</p>
+
+    </div>
+</div><br>
+<!-- Proglašenje -->
+<div class="opis">
+    <div class="info">
+        <h3><u>Proglašenje</u></h3>
+        <p>Nacionalnim parkom proglašen je 1999. godine kako bi se zaštitile njegove prirodne vrijednosti i jedinstveni krški krajolik.</p>
+    </div>
+    <a href="https://www.visit-croatia.hr/photos/destinations/thumbs/Sjeverni-Velebit-60898c871c599561994618_huge.jpg" style="width: 50%; padding: 2%;"><img style="width: 100%;" src="https://www.visit-croatia.hr/photos/destinations/thumbs/Sjeverni-Velebit-60898c871c599561994618_huge.jpg" alt=""></a>
+</div>
+<br>
+<!-- Priroda i životinje -->
+<div class="opis2">
+    <div class="info">
+        <h3><u>Priroda i životinje</u></h3>
+        <p>U parku raste velebitska degenija, endemska biljka koja je simbol Velebita. Od životinja se ističu smeđi medvjed, vuk, ris te brojne vrste ptica i kukaca.</p>
+   </div>
+   <div class="slikeživotinje">
+        <a href="https://np-sjeverni-velebit.hr/www/images/001_biljke_2/04_Kitajbelov%20pakujac%20Aquilegia%20kitaibelii%20nalazi%20se%20na%20Dodatku%20i%20Bernske%20konvencije%20Jasenka%20Topi.png"><img src="https://np-sjeverni-velebit.hr/www/images/001_biljke_2/04_Kitajbelov%20pakujac%20Aquilegia%20kitaibelii%20nalazi%20se%20na%20Dodatku%20i%20Bernske%20konvencije%20Jasenka%20Topi.png"></a>
+    <a href="https://np-sjeverni-velebit.hr/www/images/001_biljke_2/05_Skopolijeva%20guarka%20Arabis%20scopoliana%20nalazi%20se%20na%20Dodatku%20II%20Direktive%20o%20stanitima%20Sanja%20Kovai.png"><img  src="https://np-sjeverni-velebit.hr/www/images/001_biljke_2/05_Skopolijeva%20guarka%20Arabis%20scopoliana%20nalazi%20se%20na%20Dodatku%20II%20Direktive%20o%20stanitima%20Sanja%20Kovai.png"></a>
+    <a href="https://np-sjeverni-velebit.hr/www/images/001_biljke_2/01_akenov%20ranjenik%20Anthyllis%20montana%20subsp.%20jaquinii%20raste%20na%20istonim%20Alpama%20i%20balkanskim%20planinama.png"><img src="https://np-sjeverni-velebit.hr/www/images/001_biljke_2/01_akenov%20ranjenik%20Anthyllis%20montana%20subsp.%20jaquinii%20raste%20na%20istonim%20Alpama%20i%20balkanskim%20planinama.png"></a>
+    <a href="https://np-sjeverni-velebit.hr/www/images/001_biljke_2/02_Velebitski%20klini%20Dianthus%20velebiticus%20raste%20samo%20na%20Velebitu%20i%20Likoj%20Pljeivici.png"><img src="https://np-sjeverni-velebit.hr/www/images/001_biljke_2/02_Velebitski%20klini%20Dianthus%20velebiticus%20raste%20samo%20na%20Velebitu%20i%20Likoj%20Pljeivici.png" alt=""></a>
+    </div>
+</div>
+<br>
+<!-- Josip Broz Tito -->
+<div class="opis">
+    <div class="info">
+        <h3><u>Turizam</u></h3>
+        <p>Najpoznatija je Premužićeva staza, jedna od najljepših planinarskih staza u Hrvatskoj. Posjetitelji također rado obilaze Botanički vrt Velebit i vrh Zavižan.</p>
+    </div>
+   <a href="https://mountainandforest-travel.hr/wp-content/uploads/2022/04/19.jpg" style="width: 70%; padding: 2%;"><img style="width:100%;" src="https://mountainandforest-travel.hr/wp-content/uploads/2022/04/19.jpg"></a>
+   
+</div><br>
+
+<!-- Zanimljivosti -->
+<div class="opis">
+    <div class="info">
+        <h3><u>Zanimljivosti</u></h3>
+        <ul>
+            <li>U parku se nalazi poznata Lukina jama, jedna od najdubljih jama na svijetu</li>
+            <li>Prolazi kroz njega čuvena Premužićeva staza, koja se smatra jednom od najljepših planinarskih staza u Europi.</li>
+            <li>To je jedno od rijetkih mjesta u Hrvatskoj gdje žive velike zvijeri poput Smeđi medvjed, Vuk i Ris.</li>
+            <li>Zbog svoje raznolikosti, park je dio UNESCO-ovog rezervata biosfere UNESCO (Velebit).</li>
+                </ul>
+    </div>
+    <a href="https://np-sjeverni-velebit.hr/www/images/sadrzaj/premuziceva_staza/002/IMG_5383.JPG" style="width: 50%; padding: 2%;"><img style="width: 100%;" src="https://np-sjeverni-velebit.hr/www/images/sadrzaj/premuziceva_staza/002/IMG_5383.JPG"></a>
+</div><br>
+
+
+
+
+    <footer>
+    <div class="opis" style="background-color: rgb(50, 67, 33); border: dashed lime; padding: 0;">
+    <div class="info">
+        <h3 style="text-align: left;"><u>Izvori</u></h3>
+        <a href="https://np-sjeverni-velebit.hr/" target="_blank" style="width: 100%;">https://np-sjeverni-velebit.hr/</a>
+         <br> Svi izvori bili su pristupljeni i dostupni od 28.4.2026 do 10.6.2026. 
+    </div>
+    <img style="padding: 2%;width: 25%;" src="https://np-sjeverni-velebit.hr/www/images/logo_sjeverni.png">
+</div><br>
+        <p>&copy; 2026 Nacionalni parkovi Hrvatske - Mihael Barbarić - 1.f - Sva prava pridržana<br> Svi izvori bili su pristupljeni i dostupni od 28.4.2026 do 10.6.2026. </p>
+    </footer>
+</body>
+</html>
